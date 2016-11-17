@@ -1,0 +1,21 @@
+Use a folder for each different time check
+cron executes all scripts in the folder
+use a loop through for all the files in the folder
+each file has a set command
+
+define common things to check as command
+  ping
+  url
+  get info  kodi what's playing use case
+
+
+command="ping"
+
+define the destination
+
+target="mytarget"
+
+define what returns
+  we should be setting a value or status in ST
+
+return=""

@@ -1,0 +1,15 @@
+# Minute   Hour   Day of Month       Month          Day of Week        Command
+# (0-59)  (0-23)     (1-31)    (1-12 or Jan-Dec)  (0-6 or Sun-Sat)
+    0        2          12             *                *            /usr/bin/find
+
+# every 15
+*/15   *   *   *   * /ST/RPI_Controller/cronScheduler.sh quarter > /dev/null
+
+# every 30
+*/30   *   *   *   * /ST/RPI_Controller/cronScheduler.sh half > /dev/null
+
+# every hour
+*   */1   *   *   * /ST/RPI_Controller/cronScheduler.sh full > /dev/null
+
+# every day
+*   */1   *   *   * /ST/RPI_Controller/cronScheduler.sh day > /dev/null
